@@ -1,23 +1,17 @@
 import java.util.Scanner;
 
 public class DrivingSimulationLab {
-
     public static String gear = "P";
-
     public static int speed = 0;
-
     public static boolean isEngineOn = false;
     public static Scanner keyBoard = new Scanner(System.in);
     public static void startSimulation() {
     
         boolean displayMenu = true;
-      
         while (displayMenu) {
             
             displayDashboard();
-
             int choice = getUserChoice();
-    
             processChoice(choice);
             System.out.println();
         }
@@ -43,27 +37,21 @@ public class DrivingSimulationLab {
 
     public static void processChoice(int choice) {
         switch (choice) {
-            // Toggle the engine state
             case 1:
                 toggleEngine();
                 break;
-            // Change the gear
             case 2:
                 changeGear();
                 break;
-            // Accelerate the car
             case 3:
                 accelerate();
                 break;
-            // Apply the brakes
             case 4:
                 brake();
                 break;
-            // Exit/Terminate the simulation
             case 5:
                 exitSimulation();
                 break;
-            // Handle the invalid choice (Any other input from the user except choices given above)
             default:
                 System.out.println("Invalid choice. Please try again.");
         }
@@ -80,6 +68,7 @@ public class DrivingSimulationLab {
     }
 
     public static void changeGear() {
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter gear (D for Drive, R for Reverse): ");
         String input = scanner.nextLine().toUpperCase();
@@ -102,24 +91,24 @@ public class DrivingSimulationLab {
     }
 
     public static void brake() {
-        //Condition to apply the brakes if the engine state is on and the speed is greater than 5
+ 
         if (isEngineOn && speed > 5) {
             speed = speed - 5;
             System.out.println("Brakes applied. Speed reduced to: " + speed + " km/h");
+
         } else {
             System.out.println("Braking system could not be initiated. Either engine is off or speed is too low.");
         }
     }
 
     public static void exitSimulation() {
-        System.out.println("Car simulation is about to be terminated");
 
+        System.out.println("Car simulation is about to be terminated");
         System.exit(0);
 
     }
 
     public static void main(String[] args) {
-    
         startSimulation();
     }
 }
