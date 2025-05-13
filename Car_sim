@@ -72,7 +72,7 @@ public class DrivingSimulationLab {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter gear (D for Drive, R for Reverse): ");
         String input = scanner.nextLine().toUpperCase();
-
+        
         if (input.equals("D") || input.equals("R")) {
             gear = input;
             System.out.println("Gear changed to: " + gear);
