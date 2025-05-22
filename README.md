@@ -1,25 +1,36 @@
-👋 Welcome to My GitHub
-Hi, I'm an IT Installation Analyst with a strong background in system support, automation, and quality assurance. Since August 2022, I’ve been working hands-on with both hardware and software installations while contributing to backend systems and customer-focused solutions.
+# BMI Calculator (Java)
 
-💼 Experience & Skills
-🖥️ IT Support & Systems: Installation and configuration of hardware/software for end users. Experience with system cloning and administration.
+A simple command-line **Body Mass Index (BMI) Calculator** written in Java. This project was created for learning and practice purposes.
 
-🛠️ Automation & Scripting: Proficient in Bash scripting to streamline recurring tasks and improve workflow efficiency.
+## 📌 What is BMI?
 
-🗄️ Database Management: Ongoing maintenance and troubleshooting of Oracle and PostgreSQL environments.
+BMI (Body Mass Index) is a numerical value of a person's weight in relation to their height. It is used to categorize individuals into underweight, normal weight, overweight, or obese.
 
-🔍 Quality Assurance: Feature and bug fix testing prior to production releases.
+**Formula:**
+BMI = weight (kg) / (height (m) * height (m))
+BMI = (weight in pounds × 703) / (height in inches)²
 
-☁️ Cloud & Domains: Domain setup and management using AWS.
+## 🛠 Features
 
-📈 Project Involvement: Collaborate on large-scale projects using Jira for task tracking and deadline management.
+- Accepts user input for weight (in kilograms) and height (in meters)
+- Calculates BMI based on standard formula
+- Categorizes the BMI result into:
+  - Underweight
+  - Normal weight
+  - Overweight
+  - Obese
+- Provides input validation
 
-🤝 Customer Experience: Proactively improved customer satisfaction through data-driven feedback analysis and solution implementation.
+## 🚀 Getting Started
 
-🔭 Current Focus
-I'm interested in further expanding my skills in DevOps, cloud infrastructure, and automation. I’m passionate about building efficient systems that are reliable, scalable, and user-friendly.
+### Requirements
 
-<!---
-georgebruze/georgebruze is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+- Java JDK 8 or later
+- A text editor or IDE (e.g., IntelliJ, Eclipse, VS Code)
+
+### Running the Program
+
+1. Clone or download the repository:
+   ```bash
+   git clone https://github.com/your-username/bmi-calculator-java.git
+   cd bmi-calculator-java
